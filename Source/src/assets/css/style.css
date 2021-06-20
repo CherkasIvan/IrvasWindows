@@ -18,6 +18,20 @@ body {
   color: red;
 }
 
+.faded {
+  animation-name: faded;
+  animation-duration: 1s;
+}
+
+@keyframes faded {
+  from {
+    opacity: .1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -1054,7 +1068,7 @@ textarea:focus {
 }
 
 .no-background {
-  background: url();
+  background: url(#);
 }
 
 .checkbox-custom[id="warm"]::before {
@@ -1063,7 +1077,7 @@ textarea:focus {
 
 .popup_calc_profile_content .label {
   padding: 1.3rem 2rem;
-  z-index: 18rem;
+  z-index: 18;
   color: #000000;
   font-size: 1.5rem;
   font-weight: 500;
